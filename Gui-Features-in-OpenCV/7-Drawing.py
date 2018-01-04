@@ -12,7 +12,9 @@ img = cv2.ellipse(img, (256, 256), (100, 50), 0, 0, 180, 255, -1)
 img = cv2.circle(img, (256, 256), 40, (0, 255, 0), 5)
 
 pts = np.array([[10, 5],[20, 30], [70, 20], [50, 10]], np.int32)
+print pts
 pts = pts.reshape((-1, 1, 2))
+print pts
 img = cv2.polylines(img, [pts], True, (0, 0, 255))
 
 font = cv2.FONT_HERSHEY_SIMPLEX
